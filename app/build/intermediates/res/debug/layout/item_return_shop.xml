@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_container_view"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:background="@color/white"
+        android:paddingRight="15dp">
+        <TextView
+            android:textColor="@color/little_red"
+            android:id="@+id/id_tv_state"
+            android:text="退款"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <!-- there comes the divider -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/transparent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/tab_group_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="9dp">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:src="@drawable/image_no_pic" />
+
+        <LinearLayout
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            >
+            <TextView
+                android:id="@+id/id_tv_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="千禧之星 足金金条黄金砖投资收藏结婚送礼正品 百年好合"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/id_tv_spec"
+                android:layout_margin="3dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="规格: 千足金 2.4g" />
+
+            <TextView
+                android:id="@+id/id_tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥5020.00"
+                android:layout_margin="2dip"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/transparent" />
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="0dp"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_toLeftOf="@+id/lny_extrem_right"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            >
+
+            <TextView
+                android:id="@+id/tv_total_count"
+                android:layout_width="wrap_content"
+                android:text="申请时间："
+                android:layout_marginRight="15dp"
+                android:textColor="@color/maBlack"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:textColor="@color/maBlack"
+                android:layout_width="wrap_content"
+                android:text="2016:16:16"
+                android:id="@+id/id_tv_date"
+                android:textSize="12sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout><!-- From: file:/D:/A_Star_Project/MstarStoreAppStudio2/app/src/main/res/layout/item_return_shop.xml -->

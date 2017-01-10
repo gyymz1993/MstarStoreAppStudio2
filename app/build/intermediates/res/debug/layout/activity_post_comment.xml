@@ -1,0 +1,360 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="cn.mstar.store.ownee.activity.PostCommentActivity">
+
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/title_layout"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- top view-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:gravity="left|center_vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/comment_product_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/homepage_bracelet_01" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/comment_product_img">
+
+                        <TextView
+                            android:id="@+id/product_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="分期0首付 千禧之心 黄金手链 女款"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#101010"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/product_norms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/product_name"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="金类：千足金"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/weight_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/product_name"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginStart="21dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/product_norms"
+                            android:text="金重:2.24g"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <!-- top view -->
+
+                <!--radio group-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+
+                    <RadioGroup
+                        android:id="@+id/radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/ck_good"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/comment_radiobtn_good"
+                            android:button="@null"
+                            android:checked="false"
+                            android:drawableLeft="@drawable/icon_good"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:paddingBottom="2dip"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dip"
+                            android:paddingTop="2dip"
+                            android:text="好评"
+                            android:textColor="#DE6B69" />
+
+                        <RadioButton
+                            android:id="@+id/ck_fair"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/comment_radiobtn_general"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/icon_fair"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:paddingBottom="2dip"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dip"
+                            android:paddingTop="2dip"
+                            android:text="中评"
+                            android:textColor="#D88D41" />
+
+                        <RadioButton
+                            android:id="@+id/ck_bad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/comment_radiobtn_bad"
+                            android:button="@null"
+                            android:checked="false"
+                            android:drawableLeft="@drawable/icon_bad"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:paddingBottom="2dip"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dip"
+                            android:paddingTop="2dip"
+                            android:text="差评"
+                            android:textColor="#C8C8C8" />
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+                <!-- Relativelayout text area -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:minHeight="100dp"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp">
+
+                        <EditText
+                            android:id="@+id/editext"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/text_area_background"
+                            android:hint="亲，爱要大声的说出来，对其他顾客有很大的帮助哦~~"
+                            android:maxLines="2"
+                            android:padding="8dip"
+                            android:textColor="@color/gray"
+                            android:textColorHint="#E5E3E3"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/btn_camera"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/btn_camera" />
+
+                    </LinearLayout>
+
+
+                    <cn.mstar.store.customviews.GridViewForScrollView
+                        android:id="@+id/comment_gridView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/white"
+                        android:listSelector="@null"
+                        android:numColumns="3"
+                        android:paddingBottom="15dip"
+                        android:paddingTop="4dp"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/shop_review_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="店铺评价"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/shop_rating_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="商品评分 "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="20sp" />
+
+                        <RatingBar
+                            android:id="@+id/shop_ratingBar"
+                            style="@style/roomRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:numStars="5"
+                            android:rating="5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/service_rating_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="服务评分 "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="20sp" />
+
+                        <RatingBar
+                            android:id="@+id/service_ratingBar"
+                            style="@style/roomRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:numStars="5"
+                            android:rating="5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/deliver_rating_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发货速度 "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="20sp" />
+
+                        <RatingBar
+                            android:id="@+id/deliver_ratingBar"
+                            style="@style/roomRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:numStars="5"
+                            android:rating="5" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView2"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="bottom|right"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_send_comment"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_forget_pwd"
+            android:background="@drawable/btn_login_background_go"
+            android:text="@string/send_comment"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>
+<!-- From: file:/D:/A_Star_Project/MstarStoreAppStudio2/app/src/main/res/layout/activity_post_comment.xml -->

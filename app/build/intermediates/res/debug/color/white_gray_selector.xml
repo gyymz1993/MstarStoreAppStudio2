@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/color_light_grey" android:state_enabled="false" />
+    <item android:color="@color/white" android:state_enabled="true" />
+</selector><!-- From: file:/D:/A_Star_Project/MstarStoreAppStudio2/app/src/main/res/color/white_gray_selector.xml -->

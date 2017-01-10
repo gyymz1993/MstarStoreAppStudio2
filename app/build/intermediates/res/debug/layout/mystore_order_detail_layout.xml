@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <ListView
+        android:id="@+id/product_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/check_logistics"
+            style="@style/txt_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="查看物流"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/confirm_shipping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/txt_btn_bg"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="确认发货"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/if_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="是否同意？" />
+
+            <TextView
+                android:id="@+id/no"
+                style="@style/txt_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我拒绝" />
+
+            <TextView
+                android:id="@+id/yes"
+                style="@style/txt_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我同意" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/confirm_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/logis_btn"
+                style="@style/txt_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="查看物流" />
+
+            <TextView
+                android:id="@+id/confirm_receive_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/txt_btn_bg"
+                android:padding="16dp"
+                android:text="确认收货"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/D:/A_Star_Project/MstarStoreAppStudio2/app/src/main/res/layout/mystore_order_detail_layout.xml -->

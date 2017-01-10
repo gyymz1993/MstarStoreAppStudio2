@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dip">
+
+    <TextView
+        android:id="@+id/id_tv_itme_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dip"
+        android:text="重量>"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/id_tv_itme_name"
+        android:layout_marginLeft="20dip"
+        >
+
+        <info.hoang8f.android.segmented.SegmentedGroup
+            android:layout_centerVertical="true"
+            android:id="@+id/id_segmented_group"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal"
+            segmentedgroup:sc_border_width="1dp"
+            segmentedgroup:sc_corner_radius="5dp"
+            segmentedgroup:sc_tint_color="#BB9B57">
+        </info.hoang8f.android.segmented.SegmentedGroup>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

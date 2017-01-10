@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/color_little_circle_wcl"></solid>
+    <stroke android:width="5dip" android:color="@color/color_little_circle_wcl"></stroke>
+    <corners android:topLeftRadius="15dip"
+        android:bottomLeftRadius="15dip"
+        android:bottomRightRadius="15dip"
+        android:topRightRadius="15dip">
+
+    </corners>
+</shape><!-- From: file:/D:/A_Star_Project/MstarStoreAppStudio2/app/src/main/res/drawable/shape_text.xml -->

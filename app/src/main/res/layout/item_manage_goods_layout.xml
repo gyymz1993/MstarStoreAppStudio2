@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_group_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/custom_checkedbox_design_all" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="12dp"
+            android:contentDescription=""
+            android:src="@drawable/image_no_pic" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:minHeight="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="千禧之星 足金金条黄金砖投资收藏结婚送礼正品 百年好合" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="售价¥5020.00"
+                android:textColor="@color/red" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/item_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="拿货价¥5020.00"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/color_gold_nor"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text="平台"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/item_txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="建议零售价¥5020.00"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/buyers_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="562人在买"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_handle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/sub_prom"
+                style="@style/txt_btn_style"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="促销"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/sub_upload"
+                style="@style/txt_btn_style"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="上新"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/handle_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@color/white"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/mend"
+            style="@style/txt_btn_style"
+            android:layout_alignParentRight="true"
+            android:text="修改" />
+
+        <TextView
+            android:id="@+id/get_product"
+            style="@style/txt_btn_style"
+            android:layout_toLeftOf="@+id/mend"
+            android:text="拿货" />
+
+        <TextView
+            android:id="@+id/let_down"
+            style="@style/txt_btn_style"
+            android:layout_toLeftOf="@id/get_product"
+            android:text="下架" />
+
+        <TextView
+            android:id="@+id/delete"
+            style="@style/txt_btn_style"
+            android:layout_toLeftOf="@id/let_down"
+            android:text="删除"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

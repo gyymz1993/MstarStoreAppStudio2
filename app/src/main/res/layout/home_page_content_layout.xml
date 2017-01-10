@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_group_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_horn" />
+
+        <TextView
+            android:id="@+id/current_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="今日金价：黄金226/元/克 铂金190/元/克" />
+    </LinearLayout>
+
+    <include layout="@layout/flash_sale_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/home_title_background" />
+
+    <include layout="@layout/recommend_new_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/home_title_background" />
+
+    <include layout="@layout/supper_affordable_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/home_title_background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titlelabel3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_group_bg"
+            android:padding="8dp"
+            android:text="为你推荐" />
+
+        <cn.mstar.store.customviews.CustomGridView
+            android:id="@+id/recommend_for_you"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titlelabel3"
+            android:layout_marginTop="3dp"
+            android:background="@color/transparent"
+            android:horizontalSpacing="3dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="3dp" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tab_group_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="9dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/image_no_pic" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="千禧之星 足金金条黄金砖投资收藏结婚送礼正品 百年好合"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/spec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="规格: 千足金 2.4g" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥5020.00"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="x1" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn"
+            style="@style/txt_btn_style"
+            android:layout_marginRight="0dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="确认发货"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="9dp">
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="¥10040.00"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/total_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/total"
+            android:layout_toLeftOf="@+id/total"
+            android:text="总计: "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/distribution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/total_label"
+            android:text="¥523.50.00"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/distribution_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/distribution"
+            android:text="分销佣金: "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/goodsNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/distribution_label"
+            android:text="共1件商品"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titile_lay"
+        layout="@layout/title_layout" />
+
+
+    <LinearLayout
+        android:id="@+id/jiaru_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/up_background_layer"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <Button
+            android:id="@+id/id_btjoin"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/apply_for_agency"
+            android:text="马上开通"
+            android:textColor="@color/white_gray_selector"
+            android:textSize="13sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:button="@null"
+            android:text="我已阅读协议，并同意开通"
+            android:textColor="@color/color_light_grey"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <WebView
+        android:id="@+id/id_webshow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/jiaru_lay"
+        android:layout_below="@+id/titile_lay"
+        android:scrollbars="none" />
+</RelativeLayout><!-- From: file:/D:/A_Star_Project/MstarStoreAppStudio2/app/src/main/res/layout/agent_main.xml -->

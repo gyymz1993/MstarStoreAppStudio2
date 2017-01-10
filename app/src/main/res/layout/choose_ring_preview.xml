@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <include
+        layout="@layout/title_layout"
+        ></include>
+
+
+
+    <LinearLayout
+        android:id="@+id/id_ly_show_data"
+        android:layout_marginTop="65dip"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_while_bg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+        <TextView
+            android:background="@drawable/shape_button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:text="预览"
+            android:textColor="@color/white"
+            />
+
+        <LinearLayout
+            android:background="@drawable/slecet_while_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                style="@style/layout_horizontal"
+                android:layout_weight="1"
+                android:layout_margin="5dip"
+                >
+
+                <ImageView
+                    android:id="@+id/id_ig_view1"
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/id_ly_content1"
+                style="@style/layout_horizontal"
+                android:layout_weight="1.1"
+                android:orientation="vertical"
+                android:layout_margin="8dip"
+                android:layout_marginLeft="5dip"
+                >
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@color/linen"
+            ></View>
+
+        <RelativeLayout
+            android:id="@+id/id_item_ringshow_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <include
+
+                layout="@layout/item_ringshow_list"
+                ></include>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="20dip"
+            android:layout_below="@+id/id_item_ringshow_list"
+            android:layout_marginBottom="20dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <include
+                layout="@layout/item_show_pay"></include>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <include
+        android:background="@drawable/shape_while_bg"
+        layout="@layout/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        layout="@layout/no_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        layout="@layout/network_error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

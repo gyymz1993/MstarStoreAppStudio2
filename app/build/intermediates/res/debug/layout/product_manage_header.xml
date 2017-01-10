@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/tab_group_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <CheckBox
+            android:id="@+id/select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/custom_checkedbox_design_all"
+            android:text="全部选中"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/header_btn_down"
+            style="@style/txt_btn_style"
+            android:text="全部下架"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/header_btn_up"
+            style="@style/txt_btn_style"
+            android:text="全部上架"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btn_upload_pruduct"
+            style="@style/txt_btn_style"
+            android:text="上传商品"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</LinearLayout><!-- From: file:/D:/A_Star_Project/MstarStoreAppStudio2/app/src/main/res/layout/product_manage_header.xml -->

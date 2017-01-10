@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/title_layout"
+        >
+    </include>
+
+    <include
+        layout="@layout/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        layout="@layout/no_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        layout="@layout/network_error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RadioGroup
+        android:id="@+id/id_ry_group"
+        android:layout_marginTop="52dip"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dip"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        >
+
+        <RadioButton
+            android:id="@+id/salesBtn"
+            android:layout_width="100dip"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:button="@null"
+            android:drawableRight="@drawable/homepage_list_price_down"
+            android:background="@drawable/radionbtn_select"
+            android:paddingRight="10dip"
+            android:text="@string/price"
+            android:gravity="center"
+            />
+
+        <RadioButton
+            android:id="@+id/priceBtn"
+            android:layout_width="100dip"
+            android:paddingRight="10dip"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableRight="@drawable/homepage_list_price_down"
+            android:text="销量"
+            android:background="@drawable/radionbtn_select"
+            />
+    </RadioGroup>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/id_ry_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        >
+        <cn.mstar.store.customviews.PullToRefreshView
+            android:id="@+id/container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/id_gv_slelect_ring"
+            android:numColumns="1"
+            android:verticalSpacing="5dip"
+            android:horizontalSpacing="5dip"
+            android:gravity="center"
+            android:scrollbars="none"
+            >
+        </GridView>
+        </cn.mstar.store.customviews.PullToRefreshView>
+    </RelativeLayout>
+
+</RelativeLayout>

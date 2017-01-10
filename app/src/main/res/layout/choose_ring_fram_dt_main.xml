@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        layout="@layout/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        layout="@layout/no_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        layout="@layout/network_error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ScrollView
+        android:id="@+id/id_sl_show_data"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:fillViewport="false"
+        >
+
+
+    <RelativeLayout
+
+        android:layout_marginTop="60dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+        <TextView
+            android:background="@drawable/shape_button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:text="戒托详情"
+            android:textColor="@color/white"
+            />
+
+
+    <LinearLayout
+        android:layout_marginTop="60dip"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="180dip"
+        android:gravity="center_vertical"
+        android:id="@+id/ig_content"
+        android:layout_marginBottom="2dip"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:src="@drawable/icon_confirmorder_right"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/id_ig_left"
+            />
+
+        <ImageView
+            android:background="@drawable/selector_gridview_item"
+            android:id="@+id/id_ig_show"
+            android:layout_toRightOf="@+id/id_left"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            style="@style/layout_horizontal"
+            android:layout_weight="7"
+            />
+
+
+        <ImageView
+            android:id="@+id/id_ig_right"
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:src="@drawable/icon_confirmorder_return"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/ig_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="3dip"
+            android:id="@+id/id_menus"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center_horizontal"
+            >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/id_menus"
+            android:id="@+id/miaoshu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:background="@color/white"
+            >
+            <include layout="@layout/ring_detail_buttom">
+
+            </include>
+
+        </LinearLayout>
+
+        <cn.mstar.store.customviews.CustomWebview
+            android:layout_marginTop="10dip"
+            android:layout_below="@+id/miaoshu"
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    </ScrollView>
+
+    <include
+        layout="@layout/title_layout"
+        ></include>
+
+</RelativeLayout>

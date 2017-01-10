@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_container_view"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/tab_group_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="9dp">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/image_no_pic" />
+
+        <LinearLayout
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            >
+            <TextView
+                android:id="@+id/id_tv_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="千禧之星 足金金条黄金砖投资收藏结婚送礼正品 百年好合"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/id_tv_spec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="规格: 千足金 2.4g" />
+
+            <TextView
+                android:id="@+id/id_tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥5020.00"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>

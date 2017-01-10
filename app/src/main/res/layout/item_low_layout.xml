@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dip"
+    android:orientation="vertical"
+    android:background="@drawable/low_btn_down_bg"
+    >
+
+    <RelativeLayout
+        android:layout_marginTop="10dip"
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_marginLeft="20dip"
+            android:id="@+id/id_tv_stnames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称：" />
+
+        <TextView
+            android:layout_toRightOf="@id/id_tv_stnames"
+            android:id="@+id/id_tv_stname"
+            android:layout_marginLeft="10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的店铺" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_marginLeft="20dip"
+            android:id="@+id/id_tv_sttimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开店时间：" />
+
+        <TextView
+            android:layout_toRightOf="@id/id_tv_sttimes"
+            android:id="@+id/id_tv_sttime"
+            android:layout_marginLeft="10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_marginLeft="20dip"
+            android:id="@+id/id_tv_stpeoples"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系人：" />
+
+        <TextView
+            android:layout_toRightOf="@id/id_tv_stpeoples"
+            android:id="@+id/id_tv_stpeople"
+            android:layout_marginLeft="10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="杨 少" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_marginLeft="20dip"
+            android:id="@+id/id_tv_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码：" />
+
+        <TextView
+            android:layout_toRightOf="@id/id_tv_numbers"
+            android:id="@+id/id_tv_number"
+            android:layout_marginLeft="10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13177008851" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dip"
+        >
+
+        <TextView
+            android:layout_marginLeft="20dip"
+            android:id="@+id/id_tv_xiaoshoues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="销售额：" />
+
+        <TextView
+            android:layout_toRightOf="@id/id_tv_xiaoshoues"
+            android:id="@+id/id_tv_xiaoshoue"
+            android:layout_marginLeft="10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="1888" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

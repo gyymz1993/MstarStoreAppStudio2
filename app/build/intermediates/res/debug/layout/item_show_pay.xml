@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/id_tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:text="总价：67800"
+        android:layout_marginRight="25dip"
+        android:textColor="@color/color_btn"
+        />
+
+    <TextView
+        android:layout_marginTop="5dip"
+        android:layout_below="@+id/id_tv_total"
+        android:id="@+id/id_tv_prepay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:text="预付：67800"
+        android:textColor="@color/awesome_red"
+        android:layout_marginRight="25dip"
+        android:visibility="gone"
+        />
+    <TextView
+        android:layout_marginTop="5dip"
+        android:layout_below="@+id/id_tv_prepay"
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="14sp"
+        android:textColor="@color/awesome_red"
+        android:text="（*余额在验货之后支付）"
+        android:layout_marginRight="5dip"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_marginTop="10dip"
+        android:layout_below="@+id/hint"
+        android:id="@+id/id_pay_total"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="5dip"
+        android:textSize="16sp"
+        android:text="全额付款"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_buttnon"
+        android:padding="10dip"
+        />
+
+    <Button
+        android:layout_marginTop="10dip"
+        android:layout_below="@+id/hint"
+        android:layout_toLeftOf="@+id/id_pay_total"
+        android:id="@+id/id_pay_prepay"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="预付定金"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_buttnon"
+        android:padding="6dip"
+        android:visibility="gone"
+        />
+
+
+
+
+</RelativeLayout><!-- From: file:/D:/A_Star_Project/MstarStoreAppStudio2/app/src/main/res/layout/item_show_pay.xml -->

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wcl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFE6E6E6"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <cn.mstar.store.customviews.RoundedImageView
+            android:id="@+id/main_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            tools:src="@drawable/image_no_pic"
+            wcl:corner_radius="6dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名:"
+                android:textColor="@color/black" />
+
+            <TextView android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/name_label"
+                android:textColor="@color/black"
+                tools:text="阿飞" />
+
+            <TextView
+                android:id="@+id/phone_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_label"
+                android:text="电话:" />
+
+            <TextView android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_label"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/phone_label"
+                tools:text="13800000000"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/qq_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_label"
+                android:text="QQ:" />
+
+            <TextView android:id="@+id/qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_label"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/qq_label"
+                tools:text="454842"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/winxin_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qq_label"
+                android:text="微信号:" />
+
+            <TextView android:id="@+id/winxin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qq_label"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/winxin_label"
+                tools:text="xjdfwgj1"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_group_bg"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店铺名称:"
+            android:textColor="@color/black" />
+
+        <TextView android:id="@+id/store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            tools:text="千禧之星" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店铺介绍:"
+            android:textColor="@color/black" />
+
+        <TextView android:id="@+id/store_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            tools:text="你值得拥有" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFE6E6E6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/main_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView android:id="@+id/two_dimension_code"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="30dp"
+                tools:src="@drawable/image_no_pic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_detach_line" />
+
+                <ImageView android:id="@+id/logo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    tools:src="@drawable/image_no_pic" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_detach_line" />
+            </LinearLayout>
+
+            <TextView android:id="@+id/storeWxname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                tools:text="你大爷还是你大爷"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="12dp"
+                android:text="扫描上面二维码，进入店铺" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout><!-- From: file:/D:/A_Star_Project/MstarStoreAppStudio2/app/src/main/res/layout/my_calling_card_layout.xml -->

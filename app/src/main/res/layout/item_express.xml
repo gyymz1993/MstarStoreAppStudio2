@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dip"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip"
+        android:layout_gravity="center_vertical"
+        >
+
+    <RadioButton
+        android:id="@+id/id_rb_select_express"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:button="@drawable/custom_checkedbox_design_all"
+        android:checked="false"
+        android:clickable="false"
+        android:focusable="false"
+        />
+
+    <ImageView
+        android:id="@+id/id_ig_exicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/id_rb_select_express"
+        android:layout_marginLeft="10dip"
+        android:src="@drawable/weixin"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/id_ex_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="顺丰速递"
+        android:layout_toRightOf="@+id/id_ig_exicon"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dip"
+
+        />
+
+    </RelativeLayout>
+
+</LinearLayout>

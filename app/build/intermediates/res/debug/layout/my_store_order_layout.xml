@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <include
+        android:id="@+id/handle_bar"
+        layout="@layout/my_order_title">
+
+    </include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<RadioGroup-->
+            <!--android:id="@+id/handle_bar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="42dp"-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/tab1"-->
+                <!--style="@style/handle_bar_style"-->
+                <!--android:text="未付款" />-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/tab2"-->
+                <!--style="@style/handle_bar_style"-->
+                <!--android:text="未发货" />-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/tab3"-->
+                <!--style="@style/handle_bar_style"-->
+                <!--android:text="待收货" />-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/tab4"-->
+                <!--style="@style/handle_bar_style"-->
+                <!--android:text="退换货" />-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/tab5"-->
+                <!--style="@style/handle_bar_style"-->
+                <!--android:text="已完成" />-->
+
+        <!--</RadioGroup>-->
+
+        <cn.mstar.store.customviews.ProductCommentIndicatorView
+            android:id="@+id/tab_strip"
+            num="5"
+            android:layout_width="60dp"
+            android:layout_height="3dp"
+            android:layout_below="@+id/handle_bar"
+            android:layout_marginTop="-3dp"
+            android:background="@color/color_gold_nor" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout><!-- From: file:/D:/A_Star_Project/MstarStoreAppStudio2/app/src/main/res/layout/my_store_order_layout.xml -->

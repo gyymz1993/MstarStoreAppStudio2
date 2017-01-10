@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="1.0px" android:color="#8b7209" />
+            <corners android:bottomLeftRadius="5.0dip" android:bottomRightRadius="5.0dip" android:topLeftRadius="5.0dip" android:topRightRadius="5.0dip" />
+            <gradient android:angle="270.0" android:endColor="#c6c017" android:startColor="#c6c017" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:angle="270.0" android:endColor="#FEAC3B" android:startColor="#FEAC3B" />
+            <stroke android:width="1.0px" android:color="#FEAC3B" />
+            <corners android:bottomLeftRadius="5.0dip" android:bottomRightRadius="5.0dip" android:topLeftRadius="5.0dip" android:topRightRadius="5.0dip" />
+        </shape>
+    </item>
+
+</selector><!-- From: file:/D:/A_Star_Project/MstarStoreAppStudio2/app/src/main/res/drawable/dialog_btn_down.xml -->

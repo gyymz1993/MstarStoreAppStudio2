@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="60dip"
+    android:layout_height="60dip"
+    android:button="@null"
+    android:drawableBottom="@drawable/the_first"
+    android:background="@drawable/selector_gridview_item"
+    >
+
+</RadioButton>
